@@ -20,7 +20,22 @@ mod ui;
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins(
+            DefaultPlugins
+                .set(AssetPlugin {
+                    file_path: "assets".into(),
+                    meta_check: bevy::asset::AssetMetaCheck::Never,
+                    ..default()
+                })
+                .set(WindowPlugin {
+                    primary_window: Some(Window {
+                        canvas: Some("#bevy".into()), // use the <canvas id="bevy">
+                        fit_canvas_to_parent: true,   // fill parent size
+                        ..default()
+                    }),
+                    ..default()
+                }),
+        )
         .add_systems(Startup, setup)
         .add_systems(
             Update,

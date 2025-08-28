@@ -221,6 +221,11 @@ fn cube_control_button(
         children![(
             Node { ..default() },
             children![(
+                Node {
+                    width: Val::Px(24.0),
+                    height: Val::Px(24.0),
+                    ..default()
+                },
                 ImageNode::new(arrow_image).with_color(Color::WHITE),
                 Transform::from_rotation(Quat::from_rotation_z(arrow_rotation_radians)),
             )],
