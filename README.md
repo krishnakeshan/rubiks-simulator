@@ -1,4 +1,6 @@
 # Play!
+*It's recommended to read the section on cube rotation just below this section, first.*
+
 You can use the simulator at https://krishnakeshan.github.io/rubiks-simulator
 
 The wasm binary is currently pretty chunky at 17MB so the first load may take some time. Subsequent visits should load the wasm from your disk cache so those should be faster.
@@ -20,3 +22,4 @@ Think right-hand rule. Point your right thumb along the face’s outward normal 
 This is true no matter where the camera is. If you’re looking at the back face from the front, +90° may look reversed. This is expected.
 
 These rules may seem non-sensical (and perhaps they are) but they were used to make the implementation as simple as possible while plugging in to what the engine offers. The more intuitive rotation model of each arrow doing exactly what it looks like would require a lot of hard coding, that I don't like. However, contributions are always welcome so if you'd like to 'fix' this, feel free to send a PR.
+
