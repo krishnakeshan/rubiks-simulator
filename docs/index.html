@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <base href="/rubiks-simulator/" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        
+        <link rel="stylesheet" href="/rubiks-simulator/index-1958ea6fab15a3b4.css" integrity="sha384&#x2D;lAzFnKZH&#x2B;hbCkIn7xKOC5Z0OZ46XQoVOoJKN4v&#x2F;Pa&#x2F;SJ0GwWxwQ&#x2B;fNWXs6c0J5cv"/>
+        
+<script type="module" nonce="EIuVSW5iP4a2L/nXVSqpCg==">
+import init, * as bindings from '/rubiks-simulator/rubiks-simulator-b92b7a0948d91652.js';
+const wasm = await init({ module_or_path: '/rubiks-simulator/rubiks-simulator-b92b7a0948d91652_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+
+        <title>Rubik's Cube Simulator</title>
+    <link rel="modulepreload" href="/rubiks-simulator/rubiks-simulator-b92b7a0948d91652.js" crossorigin=anonymous integrity="sha384-MmN5hP/QjKFwvXptOVMXc+SsLdQxBTyW40soHJ0vYRwyAvJ1R2+jjaQQS49YPBz6"><link rel="preload" href="/rubiks-simulator/rubiks-simulator-b92b7a0948d91652_bg.wasm" crossorigin=anonymous integrity="sha384-NdOXKnP3n0uKSNT/+XalDvDQuwLIltuj9qJErtcXWskXVqlffLt4u3r1riNiVOMz" as="fetch" type="application/wasm"></head>
+    <body>
+        <canvas id="bevy"></canvas>
+    </body>
+</html>
